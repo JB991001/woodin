@@ -302,6 +302,9 @@ li {
 }
 }
 @media (min-width:769px) and (max-width:1024px) {
+  .headbox {
+    display: hidden;
+  }
   .outbox3p {
     margin-top: 100px;
     margin-left: 100px;
@@ -433,6 +436,9 @@ li {
   }
   }
   @media(max-width:769px) {
+    .headbox {
+      display: hidden;
+    }
     .outbox3p {
       margin-top: 100px;
       margin-left: 100px;
