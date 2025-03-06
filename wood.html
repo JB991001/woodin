@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jua&family=Nanum+Brush+Script&display=swap" rel="stylesheet">
+    <link rel= "stylesheet" href="./css/wood.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+  </head>
+  <body>
+    <div class="headbox">
+      <div class="name">우딘 HAUS</div>
+      <ul>
+        <li>WOODIN</li>
+        <li>PRODUCTS</li>
+        <li>SUPPORT</li>
+      </ul>
+    </div>
+    <div class="outbox1p">
+      CREATING HEALING SPACE IS <br />
+      WOODIN HAUSS TOP PRIORITY
+    </div>
+    <div class="outbox2p">
+      <div class="conbox">
+        <span class="cont1">BEST PRODUCT</span>
+        <span class="cont2">ECO-FRIENTLY AND</span>
+        <span class="cont3">HIGH-QUALITY</span>
+        <span class="cont4">PRODUCT</span>
+        <div class="linebox"></div>
+        <span class="cont5">우딘 HAUS는 건강한 공간을 위한</span>
+        <span class="cont6">최선의 선택을 합니다</span>
+      </div>
+      <div class="imgbox"></div>
+    </div>
+    <div class="outbox3p">
+      <div class="grid door"><i class="xi-office"></i><br />도어</div>
+      <div class="senbox">
+        <span class="carte">CATEGORY</span>
+        <span class="sen1">DESIGN FOR HEALTH</span>
+        <span class="sen2">AND WELL-BEING</span>
+        <span class="sen3"
+          >우딘은 건강한 공간을 만든다는 일념으로 끊임없이 친환경 제품을
+          연구합니다.</span>
+      </div>
+      <div class="grid partition"><i class="xi-opera"></i><br />중문</div>
+      <div class="grid sheet"><i class="xi-spotify"></i><br />시트</div>
+      <div class="grid board"><i class="xi-twich"></i><br />보드</div>
+      <div class="grid window"><i class="xi-windows"></i><br />창호</div>
+      <div class="grid wood"><i class="xi-deviantart"></i><br />목재</div>
+      <div class="grid blank"></div>
+    </div>
+
+    <script>
+      window.addEventListener("scroll", function () {
+        let cont1 = document.querySelector(".cont1");
+        let cont2 = document.querySelector(".cont2");
+        let cont3 = document.querySelector(".cont3");
+        let cont4 = document.querySelector(".cont4");
+        let cont5 = document.querySelector(".cont5");
+        let cont6 = document.querySelector(".cont6");
+        let linebox = document.querySelector(".linebox");
+        if (window.scrollY >= 700) {
+          cont1.classList.add("on");
+        }
+        if (window.scrollY >= 800) {
+          cont2.classList.add("on");
+        }
+        if (window.scrollY >= 800) {
+          cont3.classList.add("on");
+        }
+        if (window.scrollY >= 800) {
+          cont4.classList.add("on");
+        }
+        if (window.scrollY >= 800) {
+          cont5.classList.add("on");
+        }
+        if (window.scrollY >= 800) {
+          cont6.classList.add("on");
+        }
+        if (window.scrollY >= 800) {
+          linebox.classList.add("on");
+        }
+        let carte = document.querySelector(".carte");
+        let sen1 = document.querySelector(".sen1");
+        let sen2 = document.querySelector(".sen2");
+        let sen3 = document.querySelector(".sen3");
+        if (window.scrollY >= 1300) {
+          carte.classList.add("on");
+        }
+        if (window.scrollY >= 1300) {
+          sen1.classList.add("on");
+        }
+        if (window.scrollY >= 1300) {
+          sen2.classList.add("on");
+        }
+        if (window.scrollY >= 1300) {
+          sen3.classList.add("on");
+        }
+      });
+    </script>
+  </body>
+</html>
