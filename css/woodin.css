@@ -1,0 +1,190 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+.section h2 {
+    padding-top: 100px;
+    font: 600 3.5rem "Poppins", serif;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.section:first-child {
+    background: red url('../img/wood1.jpg') no-repeat center/120%;
+    animation: big 1.5s both;
+    color: white;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+.btn-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+.wood-btn {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: white;
+    background: rgba(255, 255, 255, 0.2);
+    border: 2px solid white;
+    border-radius: 8px;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+    backdrop-filter: blur(5px);
+}
+
+.wood-btn:hover {
+    background: rgba(255, 255, 255, 0.5);
+    color: black;
+    transform: scale(1.1);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
+}
+
+
+@keyframes big {
+    from {
+        background-size: 120%;
+    }
+    to {
+        background-size: 100%;
+    }
+}
+
+.section .content {
+    display: flex;
+    align-items: center;
+    width: 800px;
+    margin: 100px auto 0;
+}
+#one{
+    background-image: url(../img/wood2.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    animation: big 1.5s both;
+    color: white;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+#two{
+        background-image: url(../img/wood3.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        animation: big 1.5s both;
+        color: white;
+        text-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+#three{
+    background-image: url(../img/wood4.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    animation: big 1.5s both;
+    color: white;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+.section ul {
+    margin-left: 100px;
+    padding: 20px;
+}
+
+.section ul li {
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding: 10px 15px;
+    margin: 10px 0;
+    border-radius: 8px;
+    min-width: 200px;
+    background: rgba(0, 0, 0, 0.2); 
+    backdrop-filter: blur(5px); 
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: all 0.3s ease-in-out;
+    position: relative;
+    overflow: hidden;
+}
+
+.section ul li::before {
+    content: "✔"; 
+    font-size: 1.2rem;
+    color: yellow;
+}
+
+.section ul li:hover {
+    transform: translateX(10px);
+    background: rgba(255, 255, 255, 0.5);
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.section ul li {
+    animation: fadeInUp 0.5s ease-in-out both;
+}
+
+#rightNav {
+    position: fixed;
+    right: 20px;
+    top: 35vh;
+}
+
+#rightNav a {
+    display: block;
+    width: 20px;
+    margin: 10px;
+    border-radius: 50%;
+    background: transparent;
+    border: 1.5pt solid white;
+    color: white;
+    text-decoration: none;
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+#rightNav a:first-child {
+    display: none;
+}
+
+#rightNav a.act {
+    background: red;
+    box-shadow: 0 0 10px 5px orangered;
+    transform: scale(1.1);
+    border: 1.5pt solid yellow;
+}
+
+.section .content img {
+    display: block;
+    position: relative;
+    left: -20vw;
+}
+
+.section.move .content img {
+    animation: toRight 1.5s 0.5s both;
+}
+
+@keyframes toRight {
+    from {
+        left: -20vw;
+        opacity: 0;
+    }
+    to {
+        left: 0;
+        opacity: 1;
+    }
+}
